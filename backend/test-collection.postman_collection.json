@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "1e91f3cb-7666-4b94-b8fe-eba139af2c34",
+		"name": "test-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19723433",
+		"_collection_link": "https://universal-shuttle-479764.postman.co/workspace/My-Workspace~b6fec87c-912c-4365-8a24-1547667aa55b/collection/19723433-1e91f3cb-7666-4b94-b8fe-eba139af2c34?action=share&source=collection_link&creator=19723433"
+	},
+	"item": [
+		{
+			"name": "Combo Deals",
+			"item": [
+				{
+					"name": "get all combo deals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/combo-deals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"combo-deals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create combo deal by Id to fetch discounted price",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/combo-deals/66b246779c42ebb9065990da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"combo-deals",
+								"66b246779c42ebb9065990da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create combo deals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\":[\"66b18fe1c5a2e2c0fa941b6f\", \"66b19053c5a2e2c0fa941b71\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/combo-deals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"combo-deals"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Campus shoes\",\r\n    \"price\":100,\r\n    \"discountedPrice\":90,\r\n    \"description\":\"Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae exercitationem porro saepe ea harum corrupti vero id laudantium enim, libero blanditiis expedita cupiditate a est.\",\r\n    \"productImageUrl\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp2eAUTK2euu0RKPO_WoQjgSHRaB5c3xzqdA&s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/products/66b18fe1c5a2e2c0fa941b6f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"66b18fe1c5a2e2c0fa941b6f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
